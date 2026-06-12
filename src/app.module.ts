@@ -4,8 +4,8 @@ import { AppService } from './app.service';
 import { StudentsModule} from './students/students.modules';
 
 @Module({
-  imports: [],
-  controllers: [AppController, StudentsModule],
+  imports: [StudentsModule],
+  controllers: [AppController],
   providers: [AppService],
 })
 export class AppModule {}
